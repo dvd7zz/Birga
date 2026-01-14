@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Birga</title>
+</head>
+<body>
+    <!--Header section-->
+    <header>
+        <nav class="navigation">
+            <div class="nav-left">
+              <img src="image/birga_icon_f.png" alt="logo" class="logo">
+              <div class="burger" onclick="openMenu()">☰</div>
+            </div>
+          
+            <div class="links">
+              <a href="main.html">Bosh sahifa</a>
+              <a href="birga.html">Birga</a>
+              <a href="about-us.html">Biz haqimizda</a>
+              <a href="contact.html">Yordam</a>
+            </div>
+          
+            <div class="nav-right">
+              <button class="btn login-btn">Kirish</button>
+            </div>
+          </nav>
+    </header>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-header">
+    <span>Menu</span>
+    <span class="close" onclick="closeMenu()">✕</span>
+  </div>
+
+  <a href="main.html">Bosh sahifa</a>
+  <a href="birga.html">Birga</a>
+  <a href="about-us.html">Biz haqimizda</a>
+  <a href="contact.html">Yordam</a>
+</div>
+    <!--/Header section-->
+
+    <!--Main section-->
+    <section>
+        <div class="headline">
+            <h1> <span>Birga!</span> <br>
+                bilan birga bo'lish <br>
+                endi muammo bo'lmaydi
+            </h1> 
+            <p>Bu yerda biz g'oyalar, imkoniyatlar va <br>
+                odamlarni bir joyga jamlaymiz. Maqsadimiz - <br>
+                birga o'sish va birga yaratish
+            </p>
+            <div class="action-area"> 
+                <img class="icon" src="image/birga_icon_f.png" alt="">
+                <button>Birga bo'lish</button>
+            </div>
+           
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h4>O'zingga mos odamni top</h4>
+                <p>Bir xil maqsad, qiziqish va <br>
+                    yo'nalishga ega bo'lgan insonlarni<br>
+                    osongina topib, birga <br>
+                    harakatni boshlang.
+                </p>
+            </div>
+            <div class="card">
+                <h4>Birga o'rgan, birga o's</h4>
+                <p>Yolg'iz harakat qilish qiyin. <br>
+                    Jamoa bilan o'rganib, bilim <br>
+                    va tajribani tezroq rivojlantiring
+                </p>
+            </div>
+            <div class="card">
+                <h4>G'oyani harakatga aylantir</h4>
+                <p>Oddiy g'oyani real loyiha <br>
+                    yoki foydali hamkorlikka <br>
+                    aylantirish uchun birinchi <br>
+                    qadamni qo'ying
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--/Main section-->
+    <script>
+        function openMenu() {
+          document.getElementById("mobileMenu").style.left = "0";
+        }
+        
+        function closeMenu() {
+          document.getElementById("mobileMenu").style.left = "-100%";
+        }
+        </script>
+    <!--Footer-->
+</body>
+</html>
