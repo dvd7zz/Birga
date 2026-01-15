@@ -199,6 +199,60 @@ html,body {
     transform: translateY(-5px);
     border: 1px solid #000;
 }
+/*ABOUT SECTION STYLE*/
+.about-sec{
+    margin-left: 40px;
+}
+.about-contanier {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 24px;
+}
+.about-headline h1 {
+    font-size: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 5px;
+}
+.about-headline span {
+    color: var(--main);
+}
+.about-headline p{
+    font-family: var(--font);
+    color: #555;
+    line-height: 1.4;
+}
+.about-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+    align-items: center;
+    max-width: 1000px;                
+}
+.ab-icon{
+    width: 28px;
+}
+.about-card{
+    margin-top: 20px;
+    width: 170px;
+    height: 120px;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: var(--radius);
+    background: #f5f8ff;
+    box-shadow: rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-family: var(--font);
+    transition: all 0.3s ease;
+}
+.about-card h3{
+    font-size: 16px;
+}
+.about-card p{
+    font-size: 13px;
+}
+.about-card:hover{
+    box-shadow: rgb(58, 58, 58);
+    transform: translateY(-5px);
+}
 /*Mobile devises*/
 @media (max-width: 992px) {
     .cards {
@@ -275,4 +329,20 @@ html,body {
     .burger {
       display: block;
     }
+
   }
+@media (max-width: 992px) {
+    .about-contanier{
+        padding: 50px;
+    }
+    .about-cards {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 100% ;
+    }
+    .about-headline h1 {
+        font-size: 2rem;
+    }
+    br {
+        display: none;
+    }
+}
